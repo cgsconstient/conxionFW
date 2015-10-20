@@ -1,0 +1,143 @@
+<!-- Your site -->
+
+<div class="container-fluid ng-scope fill-height" >
+    <div class="row fill-height">
+        <div class="col-lg-9 col-md-8">
+            <div class="row">
+
+                <!-- Navbar Starts -->
+                <div class="navbar navbar-default margin-b-0">
+                    <div class="navbar-header hidden-md-lg">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="javascript:void(0)"><img src="images/logo_xs.png" class="img-responsive" /></a>
+                    </div>
+                    <div class="navbar-collapse collapse navbar-responsive-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="javascript:void(0)"><img src="images/menu/denmark-flag.png" style="width:20px;" /></a></li>
+                            <li ><a href="javascript:void(0)"><img src="images/menu/uk-flag.png" style="width:20px;" /></a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <!--<li class="hidden-xs icon"><a href="javascript:void(0)"><i class="zmdi zmdi-home"></i></a></li>-->
+                            <li><a href="javascript:void(0)">Prodcust</a></li>
+                            <li><a href="javascript:void(0)">Design Generator</a></li>
+                            <li><a href="javascript:void(0)">About</a></li>
+                            <li><a href="javascript:void(0)">Supplier</a></li>
+                            <li class="hidden-xs icon"><a href="javascript:void(0)"><i class="zmdi zmdi-account-circle"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Navbar Ends -->
+
+
+                <img class="img-responsive hidden-xs-md" src="images/home_page/banner_1.jpg" />
+                <img class="img-responsive hidden-sm-lg" src="images/home_page/banner_1_sm.jpg" />
+
+
+            </div>
+
+            <product-card display-object="app.searchResult" display-size="col-lg-4 col-md-12 col-sm-4"></product-card>
+
+
+            <div class="row">
+                <div class="col-md-12">
+
+                    <div class="stager hot-deals-stager">
+                        <div class="stager-base">
+                            <i class="zmdi zmdi-chevron-left arrow arrow-left"></i>
+                            <div class="stager-handle-content">
+                                <div class="completed-portion"></div>
+                                <a href="#" class="stager-handle completed"></a>
+                                <a href="#" class="stager-handle completed"></a>
+                                <a href="#" class="stager-handle  current"></a>
+                                <a href="javascript:void(0)" class="stager-handle"></a>
+                                <a href="javascript:void(0)" class="stager-handle"></a>
+                            </div>
+                            <i class="zmdi zmdi-chevron-right arrow arrow-right"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Main Content Ends -->
+
+
+
+        <!-- Widget Content Starts -->
+        <div class="col-lg-3 col-md-4 fill-height" style="position: relative">
+
+            <div class="widget-column fill-height">
+
+                <div style="position: relative">
+                    <ul class="nav nav-tabs widget-nav">
+                        <li class="active"><a href="#tab_1" data-toggle="tab"><i class="fa fa-search"></i></a></li>
+                        <li><a href="#tab_2" data-toggle="tab"><i class="fa fa-link"></i></a></li>
+                        <li><a href="#tab_3" data-toggle="tab"><i class="fa fa-folder"></i></a></li>
+                        <li><a href="#tab_4" data-toggle="tab"><i class="fa fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+                <div id="myTabContent" class="tab-content widget-nav-tab-content">
+                    <div class="tab-pane fade active in" id="tab_1">
+                        <div class="tab-pane-header">
+                            <h3>Search For</h3>
+                            <div class="dropdown pull-right">
+                                <a data-target="#" href="bootstrap-elements.html" data-toggle="dropdown" class="dropdown-toggle" aria-expanded="true">
+                                    <i class="mdi-navigation-more-vert"></i>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="javascript:void(0)">Action</a></li>
+                                    <li><a href="javascript:void(0)">Another action</a></li>
+                                    <li><a href="javascript:void(0)">Something else here</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="javascript:void(0)">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane-body">
+                            <advanced-search ng-model="app.searchResult"></advanced-search>
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div class="tab-pane fade" id="tab_2">
+                        <div class="tab-pane-body">
+                            <h4>Sample Tab Content 2</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab_3">
+                        <div class="tab-pane-body">
+                            <h4>Sample Tab Content 3</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="tab_4">
+                        <div class="tab-pane-body">
+                            <h4>Sample Tab Content 4</h4>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Widget Content Ends -->
+    </div>
+</div>
+
+
+<!-- Your site ends -->
