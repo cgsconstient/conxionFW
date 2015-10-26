@@ -12,7 +12,7 @@ var VIEWS = {};
 
 
 
-var mainApp = angular.module('mainApp', ['serverComm', 'ngAnimate', 'ngRoute','aSearch','w_productCard','Widget_Module']);
+var mainApp = angular.module('mainApp', ['serverComm', 'ngAnimate', 'ngRoute','aSearch','w_productCard','w_banner','Widget_Module']);
 
 mainApp.config(function ($httpProvider) {
     //Enable cross domain calls

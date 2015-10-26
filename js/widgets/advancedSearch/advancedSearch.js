@@ -16,7 +16,9 @@ WIDGETS.createWidget(config);
 
 //Core Functions
 WIDGETS.aSearch.widget.controller("aSearchCtrl", function ($scope, $element, $attrs, ServerComm) {
-    $scope.searchProducts = function () {
+    $scope.searchProducts = function ()
+    {
+        debugger
         console.log("Connecting to API...");
         $scope.url = "http://webservice.linknetwork.dk/api/en/search";
         $scope.sendData = {};
@@ -30,7 +32,34 @@ WIDGETS.aSearch.widget.controller("aSearchCtrl", function ($scope, $element, $at
         if ($scope.categoryId !== null || $scope.categoryId !== 0) {
             $scope.sendData.CategoryId = $scope.categoryId;
         }
+        //Advanced Search
+        if ($scope.Quantity !== null || $scope.Quantity !== 0)        
+            $scope.sendData.Quantity = $scope.Quantity;        
 
+        if ($scope.PriceFrom !== null)
+            $scope.sendData.PriceFrom = $scope.PriceFrom;
+        else
+            $scope.sendData.PriceFrom = "0";
+        if ($scope.PriceTo !== null)
+            $scope.sendData.PriceTo = $scope.PriceTo;
+        else
+            $scope.sendData.PriceTo = "100";
+        if ($scope.DeliveryDate !== null || $scope.DeliveryDate !== 0)
+        {
+            $scope.sendData.DeliveryDate = $scope.DeliveryDate;
+        }
+        if ($scope.Color !== null)
+        {
+            $scope.sendData.Color = $scope.Color;
+        }
+        if ($scope.MinSize !== null || $scope.MinSize !== 0)
+        {
+            $scope.sendData.MinSize = $scope.MinSize;
+        }
+        if ($scope.MaxSize !== null)
+        {
+            $scope.sendData.MaxSize = $scope.MaxSize;
+        }
         console.log($scope.sendData);
         if ($scope.sendData.ProductName || $scope.sendData.CategoryId) {
             $scope.ngModel.loading = true;
