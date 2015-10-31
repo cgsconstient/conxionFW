@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Edelweiss</title>
+
+        <!-- Sets initial viewport load and disables zooming  -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen 
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+
+        <!-- Library CSS Files -->
+        <link href="css/lib/semantic.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/lib/transition.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/lib/dropdown.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/lib/checkbox.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/lib/popup.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/lib/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/mSite-md.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <div class="site-container">
+
+            <!-- Header -->
+            <header class="site-header">
+                <a href="index.html" class="logo"> 
+                    <img src="images/logo.png" alt="Edelweiss" />
+                </a>
+                <div class="nav-icons">
+                    <a href="#"><span class="icon chat"></span></a>
+                    <a href="#"><span class="icon phone"></span></a>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="site-content">
+
+                <!-- Headings -->
+                <h2 class="header">We managed to pull a rabbit
+                    out of the hat!</h2>
+                <h4 class="subheading">
+                    We’ve found your details! Request you to confirm
+                </h4>
+
+                <!-- Correspondence Address group -->
+                <div class="ew-form-group">
+                    <div class="group-icon address"></div>
+                    <div class="group-heading">Correspondence Address</div>
+                    <form class="ui form ew-form">
+
+                        <div class="field">
+                            <input type="text" name="cp-addr1" placeholder="Address">
+                        </div>
+
+                        <div class="field">
+                            <select class="ui fluid dropdown" id="cp-city">
+                                <option value="">City</option>
+                                <option value="TN">Mumbai</option>
+                                <option value="TX">New Delhi</option>
+                                <option value="UT">Chennai</option>
+                                <option value="VT">Bengaluru</option>
+                                <option value="VA">Hyderabad</option>
+                                <option value="WA">Pune</option>
+                                <option value="WV">Kolkatta</option>
+                                <option value="WI">Noida</option>
+                                <option value="WY">Ahmedabad</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <select class="ui fluid dropdown" id="cp-state">
+                                <option value="">State</option>
+                                <option value="AL">Tamil Nadu</option>
+                                <option value="AK">Maharastra</option>
+                                <option value="AZ">New Delhi</option>
+                                <option value="AR">West Bengal</option>
+                                <option value="CA">Andra Pradesh</option>
+                                <option value="CO">Gujarat</option>
+                                <option value="CO">Uttar Pradesh</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <input type="number" name="cp-pin" placeholder="Pincode">
+                        </div>
+
+
+                        <div class="inline field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" tabindex="0" class="hidden">
+                                <label> My permanent and correspondence address are same</label>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- Permanent Address group-->
+                <div class="ew-form-group">
+                    <div class="group-icon address"></div>
+                    <div class="group-heading">Permanent Address</div>
+                    <form class="ui form ew-form">
+
+                        <div class="field">
+                            <input type="text" name="pm-addr1" placeholder="Address">
+                        </div>
+
+                        <div class="field">
+                            <select class="ui fluid dropdown disabled" id="pm-city">
+                                <option value="">City</option>
+                                <option value="TN">Mumbai</option>
+                                <option value="TX">New Delhi</option>
+                                <option value="UT">Chennai</option>
+                                <option value="VT">Bengaluru</option>
+                                <option value="VA">Hyderabad</option>
+                                <option value="WA">Pune</option>
+                                <option value="WV">Kolkatta</option>
+                                <option value="WI">Noida</option>
+                                <option value="WY">Ahmedabad</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <select class="ui fluid dropdown disabled" id="pm-state">
+                                <option value="">State</option>
+                                <option value="AL">Tamil Nadu</option>
+                                <option value="AK">Maharastra</option>
+                                <option value="AZ">New Delhi</option>
+                                <option value="AR">West Bengal</option>
+                                <option value="CA">Andra Pradesh</option>
+                                <option value="CO">Gujarat</option>
+                                <option value="CO">Uttar Pradesh</option>
+                            </select>
+                        </div>
+
+                        <div class="field">
+                            <input type="number" disabled class="disabled" name="pm-pin" placeholder="Pincode">
+                        </div>
+
+                        <!--                        <button class="ew-button half">Generate OTP</button>
+                                                <button class="ew-button half">Generate OTP</button>-->
+
+                    </form>
+                </div>
+
+                <!-- OTP group-->
+                <div class="ew-form-group">
+                    <div class="group-icon mobile"></div>
+                    <div class="group-heading">An OTP will be sent to your number</div>
+                    <form class="ui form ew-form">
+
+                        <div class="field">
+                            <input type="text" name="pm-addr1" placeholder="Mobile Number">
+                        </div>
+
+                        <button class="ew-button">Generate OTP</button>
+
+                    </form>
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="site-footer">
+                <div class="links">
+                    <ul class="text-nav">
+                        <li><a href="#">Locate Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="copyright">
+                    <ul class="text-nav">
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">© All rights reserved 2015</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Page Scripts -->
+        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/transition.min.js" type="text/javascript"></script>
+        <script src="js/form.min.js" type="text/javascript"></script>
+        <script src="js/dropdown.min.js" type="text/javascript"></script>
+        <script src="js/checkbox.min.js" type="text/javascript"></script>
+        <script src="js/popup.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+
+        <!-- Site Script -->
+        <script src="js/app.js" type="text/javascript"></script>
+
+        <script>
+            $('.ui.dropdown').dropdown();
+            $('.ui.checkbox').checkbox();
+            //Scrollbar
+            $(window).load(function () {
+                $(".menu").mCustomScrollbar(
+                        {
+                            theme: "light"
+                        }
+                );
+            });
+        </script>
+
+    </body>
+</html>

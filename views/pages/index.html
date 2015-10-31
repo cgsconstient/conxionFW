@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Edelweiss</title>
+
+        <!-- Sets initial viewport load and disables zooming  -->
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+        <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen 
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">-->
+
+        <!-- Library CSS Files -->
+        <link href="css/lib/semantic.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/mSite-md.css" rel="stylesheet" type="text/css"/>
+
+        <!-- Fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <div class="site-container">
+
+            <!-- Header -->
+            <header class="site-header">
+                <a href="index.html" class="logo"> 
+                    <img src="images/logo.png" alt="Edelweiss" />
+                </a>
+                <div class="nav-icons">
+                    <a href="#"><span class="icon chat"></span></a>
+                    <a href="#"><span class="icon phone"></span></a>
+                </div>
+            </header>
+
+            <!-- Content -->
+            <div class="site-content">
+
+                <h2 class="header">In india, Every 20 secs, 1 person grabs the opportunity to earn from
+                    the stock markets</h2>
+                <h4 class="subheading">
+                    Precisely why we've kept this account opening process
+                    incredibly fast, extremely easy & completely paperless
+                </h4>
+                <!-- Input Form -->
+                <form class="ui form ew-form">
+                    <div class="field">
+                        <label>Enter your Email ID & get started</label>
+                        <input type="text" class="email" name="first-name" placeholder="First Name">
+                        <span class="hint">Only necessary communication, No Spam, we assure you</span>
+                    </div>
+                </form>
+
+                <p class="notice"><span>Important: </span>For best experience keep PAN card
+                    & personalized cheque leaf handy</p>
+
+                <!-- Certificate -->
+
+                <div class="certificate">
+                    <img src="images/geotrust.jpg" class="geotrust"  alt=""/>
+                </div>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="site-footer">
+                <div class="links">
+                    <ul class="text-nav">
+                        <li><a href="#">Locate Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+                </div>
+
+                <div class="copyright">
+                    <ul class="text-nav">
+                        <li><a href="#">Disclaimer</a></li>
+                        <li><a href="#">© All rights reserved 2015</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Page Scripts -->
+        <script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script src="js/form.min.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+
+        <!-- Redirect Script -->
+        <script>
+            $('.ew-form').submit(function () {
+                window.location.href = "personalinfo.html";
+            });
+        </script>
+    </body>
+</html>
